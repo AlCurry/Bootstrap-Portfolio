@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- 
+Assignment 2 - use bootstrap to develop portfolio pages
+
+Basic portfolio pages: index.html, portfolio.html, about.html, and contact.html files
+   calls css/style.css
+   uses images in images/
+
+Al Curry  February 5, 2018
+
+GWU full stack development program  -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Al Curry - Bootstrap Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!-- Bootstrap  4.0 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar fix-top navbar-expand-lg navbar-light navbar-custom justify-content-between">
+        <div class="container">
+            <a id="nameHeader" class="navbar-brand">
+                <h1>Al Curry</h1>
+            </a>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link disabled" href="./index.html">About</a>
+                <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
+                <a class="nav-item nav-link" href="./contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FORM -->
+    <div class="container">
+        <div class="row justify-content-between">
+
+            <div class="col-xs-12 col-sm-12 col-md-7 p-4 mt-5 about" id="contact">
+                <div class="media">
+                    <div class="media-body">
+                        <h3 class="mt-0">Contact</h3>
+                        <form action="/action_page.php">
+                            <label for="name" class="formLabel">Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Smith" class="formInput">
+                            <br />
+                            <label for="email" class="formLabel">Email</label>
+                            
+                            <input type="text" id="email" name="email" placeholder="Email" class="formInput">
+                            <br />
+                            <label for="message" class="formLabel">Message</label>
+                            <textarea id="message" name="message" class="formText"></textarea>
+                            <br />
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONNECT SIDEBAR -->
+            <div class="col-xs-12 col-sm-12 col-md-3 p-4 mt-5 connect">
+                <h3 class="mt-0"> Connect </h3>
+                <hr>
+                <a href="https://www.linkedin.com/in/alcurry/" target="_blank">
+                    <img src="./images/linkedin-icon.png" class="img-fluid" alt="linkedin al curry">
+                </a>
+                <a href="https://github.com/alcurry" target="_blank">
+                    <img src="./images/github-icon.png" class="img-fluid" alt="github al curry">
+                </a>
+                <a href="https://stackoverflow.com/users/9216239/user9216239" target="_blank">
+                    <img src="./images/stackoverflow-icon.png" class="img-fluid" alt="stackoverflow alcurry">
+                </a>
+            </div>
+            <!-- END CONNECT SIDEBAR -->
+
+        </div>
+                <!-- FOOTER -->
+                <div id="foot" class="mt-5">
+                    <div class="container p-4">
+                        <p class="footer-block">Copyright © 2018 Al Curry</p>
+                    </div>
+                </div>
+    </div>
+
+
+    <!-- JQUERY and JS for BOOTSTRAP -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
