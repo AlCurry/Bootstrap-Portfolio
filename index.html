@@ -25,38 +25,39 @@ GWU full stack development program  -->
 
 <body>
 
-    <nav class="navbar fix-top navbar-expand-lg navbar-light navbar-custom justify-content-between">
-        <div class="container">
-            <a id="nameHeader" class="navbar-brand">
-                <h1>Al Curry</h1>
-            </a>
-            <div class="navbar-nav">
-                <a class="nav-item nav-link disabled" href="./index.html">About</a>
-                <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
-                <a class="nav-item nav-link" href="./contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- CONTENT -->
-    <div class="container">
-        <div class="row justify-content-between">
-            <!-- ABOUT ME -->
-            <div class="col-xs-12 col-sm-12 col-md-7 p-4 mt-5 about">
-                <div class="media">
-                    <div class="media-body">
-                        <h3 class="mt-0">About Me</h3>
-                        <img class="align-self-start mr-3" id="photo" src="./images/ACReichstag.jpg"
-                        height=300px width=300px
-                        alt="Al portrait">
-                        <p>
-                            Developer currently staying in Bethesda, but officially residing in Brooklyn NY. Experience includes C, Java, and Sybase
-                            for financial trading applications. Recent studies include GWU Full Stack Development program and iOS app development. Goal: to continue learning, especially mobile and web technologies and to live and work in Berlin.
-                        </p>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar fix-top navbar-expand-lg navbar-light justify-content-between">
+                <div class="container">
+                    <a id="nameHeader" class="navbar-brand">
+                        <h1>Al Curry</h1>
+                    </a>
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link disabled" href="./index.html">About</a>
+                        <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
+                        <a class="nav-item nav-link" href="./contact.html">Contact</a>
                     </div>
                 </div>
-            </div>
-            <!-- END ABOUT ME -->
+            </nav>
+        
+    <!-- MAIN SECTION - PHOTO & TEXT  (or portfolio or contact form) -->
+    <div class="container">
+            <div class="mainSection">
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      
+                <div class="innerMain">
+                  <div class="about">
+                    <h3 class="contactTitle">About Me</h3>
+                </div>
+                <img src="images/ACReichstag.jpg" id="photo" alt="Al">
+                <p>
+                        Developer currently studying in DC, but officially residing in Brooklyn NY. Experience includes C, Java, and Sybase
+                        software development
+                        for financial trading applications. Current student at the GWU Full Stack Development program and recently completed a class in iOS app development. My goal is to continue learning, especially mobile and web technologies and to live and work in Berlin.
+                    </p>
+                    <p> For fun, in addition to technology, I like traveling, riding a bike, music, art and nature.</p>
+              </div>
+              </div>
 
             <!-- CONNECT SIDEBAR -->
             <div class="col-xs-12 col-sm-12 col-md-3 p-4 mt-5 connect">
